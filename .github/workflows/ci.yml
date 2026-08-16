@@ -19,6 +19,7 @@ jobs:
     - name: Install cask
       run: |
         brew tap MilosRandelovic/tokenration
+        brew trust MilosRandelovic/tokenration
         cp Casks/tokenration.rb "$(brew --repository MilosRandelovic/tokenration)/Casks/tokenration.rb"
         brew install --cask tokenration
 

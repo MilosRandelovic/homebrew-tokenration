@@ -6,6 +6,7 @@ Homebrew tap for **[TokenRation](https://github.com/MilosRandelovic/TokenRation)
 
 ```sh
 brew tap MilosRandelovic/tokenration
+brew trust MilosRandelovic/tokenration
 brew install tokenration
 ```
 
