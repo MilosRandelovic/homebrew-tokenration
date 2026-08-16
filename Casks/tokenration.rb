@@ -33,6 +33,6 @@ cask "tokenration" do
 
       xattr -dr com.apple.quarantine "#{appdir}/TokenRation.app"
 
-    Then launch it normally. (Alternatively, install with --no-quarantine.)
+    Then launch it normally.
   EOS
 end

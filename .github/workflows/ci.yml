@@ -17,7 +17,7 @@ jobs:
       run: brew style Casks/tokenration.rb
 
     - name: Install cask
-      run: brew install --cask --no-quarantine ./Casks/tokenration.rb
+      run: brew install --cask ./Casks/tokenration.rb
 
     - name: Verify the app is installed
       run: test -d /Applications/TokenRation.app
