@@ -17,7 +17,10 @@ jobs:
       run: brew style Casks/tokenration.rb
 
     - name: Install cask
-      run: brew install --cask ./Casks/tokenration.rb
+      run: |
+        brew tap MilosRandelovic/tokenration
+        cp Casks/tokenration.rb "$(brew --repository MilosRandelovic/tokenration)/Casks/tokenration.rb"
+        brew install --cask tokenration
 
     - name: Verify the app is installed
       run: test -d /Applications/TokenRation.app
