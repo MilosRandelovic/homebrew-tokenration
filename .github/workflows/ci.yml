@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+    - Casks/tokenration.rb
+
+jobs:
+  lint-test:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v7
+
+    - name: Check cask style
+      run: brew style Casks/tokenration.rb
+
+    - name: Install cask
+      run: brew install --cask --no-quarantine ./Casks/tokenration.rb
+
+    - name: Verify the app is installed
+      run: test -d /Applications/TokenRation.app
