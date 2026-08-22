@@ -1,7 +1,7 @@
 cask "tokenration" do
-  version "0.1.1"
+  version "0.1.2"
   # Set by TokenRation CI when a release is published — not edited by hand.
-  sha256 "dd037ad4fd6035712d127124172fe21e94ca9a1d124247908e8548dd0ffefe7e"
+  sha256 "71411c207f9c662f829c9468180189ede0b0f1105fd81979e42a6fdb1b117893"
 
   url "https://github.com/MilosRandelovic/TokenRation/releases/download/v#{version}/TokenRation.zip"
   name "TokenRation"
