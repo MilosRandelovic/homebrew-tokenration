@@ -21,9 +21,9 @@ cask "tokenration" do
 
   # Quit the running menu-bar app before replacing it, so an upgrade doesn't leave the old
   # process running against a swapped-out bundle.
-  uninstall quit: "com.milos.tokenration"
+  uninstall quit: "com.milosrandelovic.tokenration"
 
-  zap trash: "~/Library/Preferences/com.milos.tokenration.plist"
+  zap trash: "~/Library/Preferences/com.milosrandelovic.tokenration.plist"
 
   # v0.1 ships ad-hoc signed rather than notarized, so Gatekeeper quarantines it on first
   # launch. Remove this once releases are signed with a Developer ID.
