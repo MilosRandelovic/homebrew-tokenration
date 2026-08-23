@@ -5,7 +5,7 @@ cask "tokenration" do
 
   url "https://github.com/MilosRandelovic/TokenRation/releases/download/v#{version}/TokenRation.zip"
   name "TokenRation"
-  desc "Menu-bar gauge for Claude usage (5-hour, weekly, per-model, spend)"
+  desc "Menu-bar gauge for Claude and Codex usage (session, weekly, per-model, spend)"
   homepage "https://github.com/MilosRandelovic/TokenRation"
 
   livecheck do
