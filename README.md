@@ -1,6 +1,6 @@
 # homebrew-tokenration
 
-Homebrew tap for **[TokenRation](https://github.com/MilosRandelovic/TokenRation)** — a native macOS menu-bar gauge for your Claude usage (5-hour session, 7-day weekly, per-model, and spend).
+Homebrew tap for **[TokenRation](https://github.com/MilosRandelovic/TokenRation)** — a native macOS menu-bar gauge for your Claude and Codex usage (session and weekly windows, per-model limits, and spend).
 
 ## Install
 
@@ -10,7 +10,7 @@ brew trust MilosRandelovic/tokenration
 brew install tokenration
 ```
 
-Launch **TokenRation** from your Applications folder — it runs in the menu bar (no Dock icon). It needs the Claude Code CLI installed and signed in; on first launch, click **Always Allow** on the one-time macOS Keychain prompt so TokenRation can read the access token Claude Code saved there. There's no separate sign-in.
+Launch **TokenRation** from your Applications folder — it runs in the menu bar (no Dock icon). It needs at least one of the Claude Code or Codex CLIs installed and signed in; whichever are present are detected automatically. For Claude, click **Always Allow** on the one-time macOS Keychain prompt on first launch, so TokenRation can read the access token Claude Code saved there. There's no separate sign-in.
 
 ## Update
 
