@@ -34,5 +34,10 @@ cask "tokenration" do
       xattr -dr com.apple.quarantine "#{appdir}/TokenRation.app"
 
     Then launch it normally.
+
+    To let coding agents read your usage, register the bundled MCP server:
+
+      claude mcp add tokenration -- tokenration-mcp
+      codex mcp add tokenration -- tokenration-mcp
   EOS
 end
