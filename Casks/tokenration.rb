@@ -25,16 +25,7 @@ cask "tokenration" do
 
   zap trash: "~/Library/Preferences/com.milosrandelovic.tokenration.plist"
 
-  # v0.1 ships ad-hoc signed rather than notarized, so Gatekeeper quarantines it on first
-  # launch. Remove this once releases are signed with a Developer ID.
   caveats <<~EOS
-    TokenRation is not yet notarized, so macOS will refuse to open it the first time.
-    After installing, clear the quarantine flag:
-
-      xattr -dr com.apple.quarantine "#{appdir}/TokenRation.app"
-
-    Then launch it normally.
-
     To let coding agents read your usage, register the bundled MCP server:
 
       claude mcp add tokenration -- tokenration-mcp
