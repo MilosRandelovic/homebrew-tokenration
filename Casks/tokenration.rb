@@ -3,10 +3,10 @@ cask "tokenration" do
   # Set by TokenRation CI when a release is published — not edited by hand.
   sha256 "5b7c189e3773767da3340101d832a43c94bc6a2945b78bc02e498b6ef653fa06"
 
-  url "https://github.com/MilosRandelovic/TokenRation/releases/download/v#{version}/TokenRation.zip"
+  url "https://github.com/MilosRandelovic/tokenration/releases/download/v#{version}/TokenRation.zip"
   name "TokenRation"
   desc "Menu-bar gauge for Claude and Codex usage (session, weekly, per-model, spend)"
-  homepage "https://github.com/MilosRandelovic/TokenRation"
+  homepage "https://github.com/MilosRandelovic/tokenration"
 
   livecheck do
     url :url

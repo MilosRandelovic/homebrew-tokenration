@@ -1,6 +1,6 @@
 # homebrew-tokenration
 
-Homebrew tap for **[TokenRation](https://github.com/MilosRandelovic/TokenRation)** — a native macOS menu-bar gauge for your Claude and Codex usage (session and weekly windows, per-model limits, and spend).
+Homebrew tap for **[TokenRation](https://github.com/MilosRandelovic/tokenration)** — a native macOS menu-bar gauge for your Claude and Codex usage (session and weekly windows, per-model limits, and spend).
 
 ## Install
 
@@ -21,7 +21,7 @@ claude mcp add tokenration -- tokenration-mcp     # Claude Code
 codex mcp add tokenration -- tokenration-mcp      # Codex
 ```
 
-It exposes one tool, `get_usage`, and only reads what the app has published — polling it costs nothing upstream. See the [TokenRation repo](https://github.com/MilosRandelovic/TokenRation#agent-access-mcp) for the details of what it returns.
+It exposes one tool, `get_usage`, and only reads what the app has published — polling it costs nothing upstream. See the [TokenRation repo](https://github.com/MilosRandelovic/tokenration#agent-access-mcp) for the details of what it returns.
 
 ## Update
 
@@ -37,4 +37,4 @@ brew uninstall tokenration          # add --zap to also remove its preferences
 
 ---
 
-Releases (the notarized `TokenRation.zip` this cask downloads) live in the [TokenRation repo](https://github.com/MilosRandelovic/TokenRation/releases); `release.sh` there builds them and updates this cask's `version`/`sha256`.
+Releases (the notarized `TokenRation.zip` this cask downloads) live in the [TokenRation repo](https://github.com/MilosRandelovic/tokenration/releases); `release.sh` there builds them and updates this cask's `version`/`sha256`.
