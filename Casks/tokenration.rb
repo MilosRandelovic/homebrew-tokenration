@@ -5,7 +5,7 @@ cask "tokenration" do
 
   url "https://github.com/MilosRandelovic/tokenration/releases/download/v#{version}/TokenRation.zip"
   name "TokenRation"
-  desc "Menu-bar gauge for Claude and Codex usage (session, weekly, per-model, spend)"
+  desc "Menu-bar gauge for Claude, Codex and Grok usage (session, weekly, spend)"
   homepage "https://github.com/MilosRandelovic/tokenration"
 
   livecheck do
@@ -30,5 +30,6 @@ cask "tokenration" do
 
       claude mcp add tokenration -- tokenration-mcp
       codex mcp add tokenration -- tokenration-mcp
+      grok mcp add tokenration tokenration-mcp
   EOS
 end
